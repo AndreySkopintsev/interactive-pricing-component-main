@@ -7,20 +7,21 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Interactive pricing component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
-
-  Pageviews
-  $ /month
+  <div class="container">
+    <header>
+      <h1>Simple, traffic-based pricing</h1>
+      <p>Sign-up for our 30-day trial. No credit card required. </p>
+    </header>
+    <section>
+      <div class="slider">
+        <div class="views"><span id="viewsNumber"></span><p>PAGEVIEWS</p></div>
+        <input type="range">
+        <div class="price"><span id="price"></span>$ <p>/month</p></div>
+      </div>
+    </section>
+  </div>
 
   Monthly Billing
   Yearly Billing 25% discount
@@ -30,10 +31,6 @@
   Email reports
 
   Start my trial
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
 </body>
 </html>
