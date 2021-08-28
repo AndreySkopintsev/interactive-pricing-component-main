@@ -1,1 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Manrope', sans-serif;
+}
+
+.container{
+    border: 1px solid red;
+    padding: 90px 20px;
+    background:linear-gradient(to bottom,hsl(230, 100%, 97%) 50%,hsl(0, 0%, 100%) 50%) ;
+    
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    margin-bottom: 50px;
+    text-align: center;
+    border: 1px solid red;
+    height: 140px;
+    background-image: url('./images/pattern-circles.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px;
+}
+
+header > h1{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+header > p{
+    width: 200px;
+}
