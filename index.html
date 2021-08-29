@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Interactive pricing component</title>
@@ -16,12 +15,12 @@
     </header>
     <section>
       <div class="slider">
-        <div class="views"><span id="viewsNumber"></span><p>PAGEVIEWS</p></div>
-        <input type="range">
-        <div class="price"><span id="price"></span>$ <p>/month</p></div>
-      </div>
-      <div class="yearlyToggle">
+        <div class="views"><span id="viewsNumber">100k</span><p>PAGEVIEWS</p></div>
+        <input type="range" min="1" id="slider" max="100" value="1">
+        <div class="price"><span id="price">$ 16.00</span><p>/month</p></div>
+        <div class="yearlyToggle">
         
+        </div>
       </div>
       <div class="start-trial">
         <ul>
@@ -29,9 +28,11 @@
           <li>100% data ownership</li>
           <li>Email reports</li>
         </ul>
-        <button>Start my trial</button>
+        <button>Start  my  trial</button>
       </div>
     </section>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
