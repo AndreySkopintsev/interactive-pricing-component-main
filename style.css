@@ -140,6 +140,7 @@ input[type='range']::-webkit-slider-thumb{
 
 /* end os input styling */
 button{
+    cursor: pointer;
     height: 40px;
     min-width: 200px;
     border: none;
@@ -151,9 +152,16 @@ button{
     word-spacing: 3px;
     font-size: 14px;
     font-family: 'Manrope', sans-serif;
+    transition: ease-in-out 0.2s;
 }
 
+button:hover{
+    background: hsl(228, 33%, 35%);
+}
 
+button:active{
+    transform: scale(0.95);
+}
 
 @media (min-width:768px){
     .container{
