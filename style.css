@@ -107,8 +107,7 @@ ul li{
 }
 
 ul li:before {
-    content: '✓  ';
-    color: rgb(38, 184, 38);
+    content: url('./images/icon-check.svg');
 }
 
 /* Range input styling */
@@ -133,6 +132,9 @@ input[type='range']::-webkit-slider-thumb{
     width: 45px;
     height: 45px;
     background: hsl(174, 86%, 45%);
+    background-image: url('./images/icon-slider.svg');
+    background-repeat: no-repeat;
+    background-position: center;
     border-radius: 50%;
     cursor: pointer;
 }
