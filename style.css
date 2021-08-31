@@ -170,7 +170,7 @@ button:active{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    max-height: 50px;
+    height: 60px;
     max-width: 300px;
     color: hsl(225, 20%, 60%);
 }
@@ -197,12 +197,49 @@ button:active{
     display: block;
 }
 
+/* Toggle switch css */
+
 .switch{
-    max-height: 50px;
-    width: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+input[type="checkbox"]{
+    cursor: pointer;
+    position: relative;
+    margin:0 5px;
+    border-radius: 20px;
+    width: 50px;
+    height: 30px;
+    -webkit-appearance: none;
+    background: hsl(223, 50%, 87%);
+    outline: none;
+    transition: ease-in-out 0.2s;
+}
+
+input:hover[type="checkbox"]{
+    background: hsl(174, 77%, 80%);
+}
+
+input:checked[type="checkbox"]{
+    background: hsl(174, 86%, 45%);
+}
+
+input[type="checkbox"]:before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+    background: #fff;
+    transition: ease-in-out 0.2s;
+}
+
+input:checked[type="checkbox"]:before{
+    left: 25px;
 }
 
 @media (min-width:768px){
@@ -235,10 +272,10 @@ button:active{
     .yearlyToggle{
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
-        max-height: 50px;
-        max-width: 450px;
+        height: 60px;
+        min-width: 400px;
     }
 
     .yearlyToggle p{
